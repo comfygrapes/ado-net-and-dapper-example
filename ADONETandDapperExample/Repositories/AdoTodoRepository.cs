@@ -28,7 +28,6 @@ namespace ADONETandDapperExample.Repositories
         private const string _createSql = @"
             INSERT INTO todos (title, description, created_at)
             VALUES (@Title, @Description, @CreatedAt);
-            SELECT last_insert_rowid();
         ";
 
         private const string _updateSql = @"
